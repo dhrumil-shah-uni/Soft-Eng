@@ -16,5 +16,23 @@ namespace TogCult
         {
 
         }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            Form1 form = new Form1();
+            if (e.ClickedItem.AccessibleName.Equals("fuvh"))
+            {
+                form.textBox1.Text = "fdfd";
+            }
+            else
+            {
+                form.textBox1.Text = "dsfls";
+            }
+        }
     }
 }
