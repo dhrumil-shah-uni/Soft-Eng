@@ -1,4 +1,4 @@
-namespace TogCult
+namespace Together_Culture
 {
     internal static class Program
     {
