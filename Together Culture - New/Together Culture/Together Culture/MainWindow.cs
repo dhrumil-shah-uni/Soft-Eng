@@ -66,7 +66,7 @@ namespace Together_Culture
             aftersplash.Start();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
 
         }

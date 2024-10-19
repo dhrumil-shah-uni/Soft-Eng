@@ -1,6 +1,6 @@
 ﻿namespace Together_Culture
 {
-    partial class UserHome
+    partial class User_Home
     {
         /// <summary> 
         /// Required designer variable.
@@ -70,14 +70,14 @@
             label1.Text = "Pins";
             label1.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // UserHome
+            // User_Home
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(flowLayoutPanel1);
             Margin = new Padding(0);
             MinimumSize = new Size(150, 150);
-            Name = "UserHome";
+            Name = "User_Home";
             flowLayoutPanel1.ResumeLayout(false);
             flowLayoutPanel1.PerformLayout();
             panel1.ResumeLayout(false);

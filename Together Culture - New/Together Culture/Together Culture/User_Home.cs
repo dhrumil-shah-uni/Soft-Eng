@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Together_Culture
 {
-    public partial class UserHome : UserControl
+    public partial class User_Home : UserControl
     {
-        public UserHome()
+        public User_Home()
         {
             InitializeComponent();
         }

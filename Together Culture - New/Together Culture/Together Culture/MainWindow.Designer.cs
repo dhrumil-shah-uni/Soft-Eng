@@ -32,8 +32,10 @@
             MainGrid = new TableLayoutPanel();
             Title = new Label();
             panel1 = new Panel();
+            user_Home1 = new User_Home();
             FoundationPanel = new Panel();
             MainGrid.SuspendLayout();
+            panel1.SuspendLayout();
             FoundationPanel.SuspendLayout();
             SuspendLayout();
             // 
@@ -47,16 +49,23 @@
             // 
             // Title
             // 
-            Title.BackColor = Color.Crimson;
             resources.ApplyResources(Title, "Title");
+            Title.AccessibleRole = AccessibleRole.TitleBar;
+            Title.BackColor = Color.Crimson;
             Title.FlatStyle = FlatStyle.Flat;
             Title.ForeColor = Color.Snow;
             Title.Name = "Title";
             // 
             // panel1
             // 
+            panel1.Controls.Add(user_Home1);
             resources.ApplyResources(panel1, "panel1");
             panel1.Name = "panel1";
+            // 
+            // user_Home1
+            // 
+            resources.ApplyResources(user_Home1, "user_Home1");
+            user_Home1.Name = "user_Home1";
             // 
             // FoundationPanel
             // 
@@ -82,6 +91,7 @@
             MouseDown += mouse_Down;
             MouseMove += mouse_Move;
             MainGrid.ResumeLayout(false);
+            panel1.ResumeLayout(false);
             FoundationPanel.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -92,5 +102,6 @@
         private Label Title;
         private Panel FoundationPanel;
         private Panel panel1;
+        private User_Home user_Home1;
     }
 }
