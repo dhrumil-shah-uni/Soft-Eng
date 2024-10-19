@@ -1,6 +1,6 @@
 ﻿namespace Together_Culture
 {
-    partial class Form1
+    partial class MainWindow
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,12 +28,60 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
+            FoundationPanel = new Panel();
+            MainGrid = new TableLayoutPanel();
+            Title = new Label();
+            FoundationPanel.SuspendLayout();
+            MainGrid.SuspendLayout();
+            SuspendLayout();
+            // 
+            // FoundationPanel
+            // 
+            resources.ApplyResources(FoundationPanel, "FoundationPanel");
+            FoundationPanel.Controls.Add(MainGrid);
+            FoundationPanel.Name = "FoundationPanel";
+            // 
+            // MainGrid
+            // 
+            MainGrid.BackColor = Color.FromArgb(27, 27, 27);
+            resources.ApplyResources(MainGrid, "MainGrid");
+            MainGrid.Controls.Add(Title, 0, 0);
+            MainGrid.Name = "MainGrid";
+            // 
+            // Title
+            // 
+            Title.BackColor = Color.FromArgb(249, 249, 243);
+            resources.ApplyResources(Title, "Title");
+            Title.FlatStyle = FlatStyle.Flat;
+            Title.ForeColor = Color.FromArgb(214, 26, 60);
+            Title.Name = "Title";
+            // 
+            // MainWindow
+            // 
+            AutoScaleMode = AutoScaleMode.None;
+            BackColor = Color.FromArgb(27, 27, 27);
+            resources.ApplyResources(this, "$this");
+            ControlBox = false;
+            Controls.Add(FoundationPanel);
+            ForeColor = Color.White;
+            FormBorderStyle = FormBorderStyle.None;
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "MainWindow";
+            ShowIcon = false;
+            SizeGripStyle = SizeGripStyle.Hide;
+            MouseDown += mouse_Down;
+            MouseMove += mouse_Move;
+            FoundationPanel.ResumeLayout(false);
+            MainGrid.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Panel FoundationPanel;
+        private TableLayoutPanel MainGrid;
+        private Label Title;
     }
 }
