@@ -42,7 +42,6 @@
             resources.ApplyResources(MainGrid, "MainGrid");
             MainGrid.Controls.Add(Title, 0, 0);
             MainGrid.Name = "MainGrid";
-            MainGrid.Paint += this.MainGrid_Paint;
             // 
             // Title
             // 
