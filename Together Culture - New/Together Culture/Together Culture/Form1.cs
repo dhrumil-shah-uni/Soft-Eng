@@ -6,7 +6,7 @@ namespace Together_Culture
 {
     public partial class MainWindow : Form
     {
-        //https://stackoverflow.com/questions/18822067/rounded-corners-in-c-sharp-windows-forms/18822204
+        //Credit: https://stackoverflow.com/questions/18822067/rounded-corners-in-c-sharp-windows-forms/18822204
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
@@ -32,44 +32,22 @@ namespace Together_Culture
         private void mouse_Down(object sender, MouseEventArgs e)
         {
             mouseLocation = new Point(-e.X, -e.Y);
-            
+
         }
 
-        
+
 
         private async void mouse_Move(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
             {
-                //Rectangle window;
-                //Point movement;
-                
 
-                //window = new Rectangle(MainWindow.ActiveForm.Left, MainWindow.ActiveForm.Top, MainWindow.ActiveForm.Width, MainWindow.ActiveForm.Height);
-
-                //Rectangle maxBounds = Screen.GetBounds(window);
                 Point mousePose = Control.MousePosition;
-                
-                
 
                 mousePose.Offset(mouseLocation.X, mouseLocation.Y);
                 Location = mousePose;
-
-
-                //if ((window.Left >= maxBounds.Left &&
-                //    window.Right <= maxBounds.Right &&
-                //    window.Top >= maxBounds.Top &&
-                //    window.Bottom <= maxBounds.Bottom))
-                //{
-                //    Location = mousePose;
-                //}else
-                //{
-                    
-                //}
-                
-
-
             }
+
         }
     }
 }
