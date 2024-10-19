@@ -130,7 +130,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Title.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Verdana, 10.2pt, style=Bold</value>
+    <value>Cooper Black, 13.8pt</value>
   </data>
   <data name="Title.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -152,7 +152,8 @@
     <value>0</value>
   </data>
   <data name="Title.Text" xml:space="preserve">
-    <value>Together Culture</value>
+    <value>Together
+Culture.</value>
   </data>
   <data name="Title.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>

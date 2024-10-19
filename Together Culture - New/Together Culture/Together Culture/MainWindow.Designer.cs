@@ -38,17 +38,18 @@
             // 
             // MainGrid
             // 
-            MainGrid.BackColor = Color.FromArgb(27, 27, 27);
+            MainGrid.BackColor = Color.Crimson;
             resources.ApplyResources(MainGrid, "MainGrid");
             MainGrid.Controls.Add(Title, 0, 0);
             MainGrid.Name = "MainGrid";
+            MainGrid.Paint += this.MainGrid_Paint;
             // 
             // Title
             // 
-            Title.BackColor = Color.FromArgb(249, 249, 243);
+            Title.BackColor = Color.Crimson;
             resources.ApplyResources(Title, "Title");
             Title.FlatStyle = FlatStyle.Flat;
-            Title.ForeColor = Color.FromArgb(214, 26, 60);
+            Title.ForeColor = Color.Snow;
             Title.Name = "Title";
             // 
             // FoundationPanel
@@ -60,7 +61,7 @@
             // MainWindow
             // 
             AutoScaleMode = AutoScaleMode.None;
-            BackColor = Color.FromArgb(27, 27, 27);
+            BackColor = Color.Crimson;
             resources.ApplyResources(this, "$this");
             ControlBox = false;
             Controls.Add(FoundationPanel);
