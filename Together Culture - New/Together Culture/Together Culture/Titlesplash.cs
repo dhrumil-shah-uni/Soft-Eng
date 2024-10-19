@@ -1,13 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Timer = System.Windows.Forms.Timer;
+﻿using Timer = System.Windows.Forms.Timer;
 
 namespace Together_Culture
 {
@@ -26,7 +17,7 @@ namespace Together_Culture
             {
                 this.Hide();
                 //this.Close();
-                
+
             };
             splash.Start();
         }

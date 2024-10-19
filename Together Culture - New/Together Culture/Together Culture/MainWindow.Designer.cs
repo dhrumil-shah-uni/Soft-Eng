@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             MainGrid = new TableLayoutPanel();
             Title = new Label();
+            panel1 = new Panel();
             FoundationPanel = new Panel();
             MainGrid.SuspendLayout();
             FoundationPanel.SuspendLayout();
@@ -41,6 +42,7 @@
             MainGrid.BackColor = Color.Crimson;
             resources.ApplyResources(MainGrid, "MainGrid");
             MainGrid.Controls.Add(Title, 0, 0);
+            MainGrid.Controls.Add(panel1, 1, 1);
             MainGrid.Name = "MainGrid";
             // 
             // Title
@@ -50,6 +52,11 @@
             Title.FlatStyle = FlatStyle.Flat;
             Title.ForeColor = Color.Snow;
             Title.Name = "Title";
+            // 
+            // panel1
+            // 
+            resources.ApplyResources(panel1, "panel1");
+            panel1.Name = "panel1";
             // 
             // FoundationPanel
             // 
@@ -84,5 +91,6 @@
         private TableLayoutPanel MainGrid;
         private Label Title;
         private Panel FoundationPanel;
+        private Panel panel1;
     }
 }

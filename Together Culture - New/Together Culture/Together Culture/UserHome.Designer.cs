@@ -28,55 +28,58 @@
         /// </summary>
         private void InitializeComponent()
         {
-            verticalScrollLayout1 = new FlowLayoutPanel();
+            flowLayoutPanel1 = new FlowLayoutPanel();
             panel1 = new Panel();
-            noticeboard_header = new Label();
-            verticalScrollLayout1.SuspendLayout();
+            label1 = new Label();
+            flowLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
-            // verticalScrollLayout1
+            // flowLayoutPanel1
             // 
-            verticalScrollLayout1.Controls.Add(panel1);
-            verticalScrollLayout1.Dock = DockStyle.Fill;
-            verticalScrollLayout1.FlowDirection = FlowDirection.TopDown;
-            verticalScrollLayout1.Location = new Point(5, 5);
-            verticalScrollLayout1.Name = "verticalScrollLayout1";
-            verticalScrollLayout1.Size = new Size(140, 140);
-            verticalScrollLayout1.TabIndex = 0;
+            flowLayoutPanel1.Controls.Add(panel1);
+            flowLayoutPanel1.Dock = DockStyle.Fill;
+            flowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
+            flowLayoutPanel1.Location = new Point(0, 0);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(150, 150);
+            flowLayoutPanel1.TabIndex = 0;
             // 
             // panel1
             // 
-            panel1.Controls.Add(noticeboard_header);
+            panel1.AutoSize = true;
+            panel1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            panel1.Controls.Add(label1);
+            panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(3, 3);
+            panel1.MinimumSize = new Size(150, 150);
             panel1.Name = "panel1";
-            panel1.Size = new Size(250, 125);
+            panel1.Size = new Size(150, 150);
             panel1.TabIndex = 0;
+            panel1.Paint += panel1_Paint;
             // 
-            // noticeboard_header
+            // label1
             // 
-            noticeboard_header.AutoSize = true;
-            noticeboard_header.BackColor = Color.Transparent;
-            noticeboard_header.Dock = DockStyle.Top;
-            noticeboard_header.FlatStyle = FlatStyle.Flat;
-            noticeboard_header.Font = new Font("Verdana", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            noticeboard_header.Location = new Point(0, 0);
-            noticeboard_header.Name = "noticeboard_header";
-            noticeboard_header.Size = new Size(60, 25);
-            noticeboard_header.TabIndex = 0;
-            noticeboard_header.Text = "Pins";
-            noticeboard_header.TextAlign = ContentAlignment.BottomCenter;
+            label1.AutoSize = true;
+            label1.Dock = DockStyle.Top;
+            label1.Font = new Font("Verdana", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(0, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(60, 25);
+            label1.TabIndex = 1;
+            label1.Text = "Pins";
+            label1.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // UserHome
             // 
-            AutoScaleMode = AutoScaleMode.None;
-            AutoSize = true;
-            AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            Controls.Add(verticalScrollLayout1);
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(flowLayoutPanel1);
+            Margin = new Padding(0);
             MinimumSize = new Size(150, 150);
             Name = "UserHome";
-            Padding = new Padding(5);
-            verticalScrollLayout1.ResumeLayout(false);
+            flowLayoutPanel1.ResumeLayout(false);
+            flowLayoutPanel1.PerformLayout();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
@@ -84,8 +87,8 @@
 
         #endregion
 
-        private FlowLayoutPanel verticalScrollLayout1;
+        private FlowLayoutPanel flowLayoutPanel1;
         private Panel panel1;
-        private Label noticeboard_header;
+        private Label label1;
     }
 }

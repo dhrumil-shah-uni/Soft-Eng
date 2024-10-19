@@ -1,6 +1,4 @@
-using Microsoft.VisualBasic.Devices;
 using System.Runtime.InteropServices;
-using System.Security.Cryptography.X509Certificates;
 using Timer = System.Windows.Forms.Timer;
 
 namespace Together_Culture
@@ -52,7 +50,7 @@ namespace Together_Culture
 
         }
 
-        
+
 
         private void MainWindow_Shown(object sender, EventArgs e)
         {
@@ -64,8 +62,13 @@ namespace Together_Culture
             this.Hide();
             Timer aftersplash = new Timer();
             aftersplash.Interval = 2000;
-            aftersplash.Tick += (source, e) => {this.Show(); };
+            aftersplash.Tick += (source, e) => { this.Show(); };
             aftersplash.Start();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
