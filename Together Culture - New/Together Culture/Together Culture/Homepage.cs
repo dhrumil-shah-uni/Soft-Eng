@@ -1,6 +1,7 @@
 using Microsoft.VisualBasic.Devices;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography.X509Certificates;
+using Timer = System.Windows.Forms.Timer;
 
 namespace Together_Culture
 {
@@ -49,5 +50,20 @@ namespace Together_Culture
             }
 
         }
+
+        private async void MainWindow_Load(object sender, EventArgs e)
+        {
+            FoundationPanel.Visible = false;
+            Timer splash = new Timer();
+            splash.Interval = 3000;
+            
+            splash.Tick += (source, e) => { FoundationPanel.Visible = true; titleSplashScreen1.Visible = false; titleSplashScreen1.Enabled = false; };
+            splash.Start();
+
+            //FoundationPanel.Visible = true;
+            //titleSplashScreen1.Visible = false;
+        }
+
+        
     }
 }

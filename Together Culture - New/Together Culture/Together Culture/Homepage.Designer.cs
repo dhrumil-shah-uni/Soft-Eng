@@ -32,6 +32,7 @@
             FoundationPanel = new Panel();
             MainGrid = new TableLayoutPanel();
             Title = new Label();
+            titleSplashScreen1 = new TitleSplashScreen();
             FoundationPanel.SuspendLayout();
             MainGrid.SuspendLayout();
             SuspendLayout();
@@ -57,12 +58,20 @@
             Title.ForeColor = Color.FromArgb(214, 26, 60);
             Title.Name = "Title";
             // 
+            // titleSplashScreen1
+            // 
+            titleSplashScreen1.BackColor = Color.Crimson;
+            resources.ApplyResources(titleSplashScreen1, "titleSplashScreen1");
+            titleSplashScreen1.ForeColor = Color.Snow;
+            titleSplashScreen1.Name = "titleSplashScreen1";
+            // 
             // MainWindow
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.FromArgb(27, 27, 27);
             resources.ApplyResources(this, "$this");
             ControlBox = false;
+            Controls.Add(titleSplashScreen1);
             Controls.Add(FoundationPanel);
             ForeColor = Color.White;
             FormBorderStyle = FormBorderStyle.None;
@@ -71,6 +80,7 @@
             Name = "MainWindow";
             ShowIcon = false;
             SizeGripStyle = SizeGripStyle.Hide;
+            Load += MainWindow_Load;
             MouseDown += mouse_Down;
             MouseMove += mouse_Move;
             FoundationPanel.ResumeLayout(false);
@@ -83,5 +93,6 @@
         private Panel FoundationPanel;
         private TableLayoutPanel MainGrid;
         private Label Title;
+        private TitleSplashScreen titleSplashScreen1;
     }
 }
