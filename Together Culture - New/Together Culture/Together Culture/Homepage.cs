@@ -24,6 +24,7 @@ namespace Together_Culture
 
         public MainWindow()
         {
+
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
@@ -51,19 +52,20 @@ namespace Together_Culture
 
         }
 
-        private async void MainWindow_Load(object sender, EventArgs e)
-        {
-            FoundationPanel.Visible = false;
-            Timer splash = new Timer();
-            splash.Interval = 3000;
-            
-            splash.Tick += (source, e) => { FoundationPanel.Visible = true; titleSplashScreen1.Visible = false; titleSplashScreen1.Enabled = false; };
-            splash.Start();
-
-            //FoundationPanel.Visible = true;
-            //titleSplashScreen1.Visible = false;
-        }
-
         
+
+        private void MainWindow_Shown(object sender, EventArgs e)
+        {
+            //this.Hide();
+            Titlesplash splashScreen = new Titlesplash();
+            //this.Hide();
+            splashScreen.Location = this.Location;
+            splashScreen.Show();
+            this.Hide();
+            Timer aftersplash = new Timer();
+            aftersplash.Interval = 2000;
+            aftersplash.Tick += (source, e) => {this.Show(); };
+            aftersplash.Start();
+        }
     }
 }
