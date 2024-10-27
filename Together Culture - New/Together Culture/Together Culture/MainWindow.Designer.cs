@@ -31,41 +31,27 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             MainGrid = new TableLayoutPanel();
             Title = new Label();
-            panel1 = new Panel();
-            user_Home1 = new User_Home();
             FoundationPanel = new Panel();
             MainGrid.SuspendLayout();
-            panel1.SuspendLayout();
             FoundationPanel.SuspendLayout();
             SuspendLayout();
             // 
             // MainGrid
             // 
-            MainGrid.BackColor = Color.Crimson;
+            MainGrid.BackColor = Color.Transparent;
             resources.ApplyResources(MainGrid, "MainGrid");
             MainGrid.Controls.Add(Title, 0, 0);
-            MainGrid.Controls.Add(panel1, 1, 1);
             MainGrid.Name = "MainGrid";
             // 
             // Title
             // 
             resources.ApplyResources(Title, "Title");
             Title.AccessibleRole = AccessibleRole.TitleBar;
-            Title.BackColor = Color.Crimson;
+            Title.BackColor = Color.Transparent;
             Title.FlatStyle = FlatStyle.Flat;
-            Title.ForeColor = Color.Snow;
+            Title.ForeColor = Color.FromArgb(249, 249, 249);
             Title.Name = "Title";
-            // 
-            // panel1
-            // 
-            panel1.Controls.Add(user_Home1);
-            resources.ApplyResources(panel1, "panel1");
-            panel1.Name = "panel1";
-            // 
-            // user_Home1
-            // 
-            resources.ApplyResources(user_Home1, "user_Home1");
-            user_Home1.Name = "user_Home1";
+            Title.Click += Title_Click;
             // 
             // FoundationPanel
             // 
@@ -76,7 +62,7 @@
             // MainWindow
             // 
             AutoScaleMode = AutoScaleMode.None;
-            BackColor = Color.Crimson;
+            BackColor = Color.FromArgb(27, 27, 27);
             resources.ApplyResources(this, "$this");
             ControlBox = false;
             Controls.Add(FoundationPanel);
@@ -91,7 +77,6 @@
             MouseDown += mouse_Down;
             MouseMove += mouse_Move;
             MainGrid.ResumeLayout(false);
-            panel1.ResumeLayout(false);
             FoundationPanel.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -101,7 +86,5 @@
         private TableLayoutPanel MainGrid;
         private Label Title;
         private Panel FoundationPanel;
-        private Panel panel1;
-        private User_Home user_Home1;
     }
 }

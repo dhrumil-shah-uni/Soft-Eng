@@ -70,5 +70,10 @@ namespace Together_Culture
         {
 
         }
+
+        private void Title_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

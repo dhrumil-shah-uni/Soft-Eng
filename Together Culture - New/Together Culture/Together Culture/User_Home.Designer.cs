@@ -28,58 +28,64 @@
         /// </summary>
         private void InitializeComponent()
         {
-            flowLayoutPanel1 = new FlowLayoutPanel();
             panel1 = new Panel();
-            label1 = new Label();
-            flowLayoutPanel1.SuspendLayout();
+            checkBox1 = new CheckBox();
+            listView1 = new ListView();
+            radioButton1 = new RadioButton();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
-            // flowLayoutPanel1
-            // 
-            flowLayoutPanel1.Controls.Add(panel1);
-            flowLayoutPanel1.Dock = DockStyle.Fill;
-            flowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
-            flowLayoutPanel1.Location = new Point(0, 0);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(150, 150);
-            flowLayoutPanel1.TabIndex = 0;
-            // 
             // panel1
             // 
-            panel1.AutoSize = true;
-            panel1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            panel1.Controls.Add(label1);
+            panel1.Controls.Add(radioButton1);
+            panel1.Controls.Add(listView1);
+            panel1.Controls.Add(checkBox1);
             panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(3, 3);
-            panel1.MinimumSize = new Size(150, 150);
+            panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(150, 150);
+            panel1.Size = new Size(670, 851);
             panel1.TabIndex = 0;
-            panel1.Paint += panel1_Paint;
             // 
-            // label1
+            // checkBox1
             // 
-            label1.AutoSize = true;
-            label1.Dock = DockStyle.Top;
-            label1.Font = new Font("Verdana", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(0, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(60, 25);
-            label1.TabIndex = 1;
-            label1.Text = "Pins";
-            label1.TextAlign = ContentAlignment.MiddleLeft;
+            checkBox1.AutoSize = true;
+            checkBox1.Dock = DockStyle.Top;
+            checkBox1.Location = new Point(0, 0);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(670, 24);
+            checkBox1.TabIndex = 0;
+            checkBox1.Text = "checkBox1";
+            checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // listView1
+            // 
+            listView1.Dock = DockStyle.Bottom;
+            listView1.Location = new Point(0, 730);
+            listView1.Name = "listView1";
+            listView1.Size = new Size(670, 121);
+            listView1.TabIndex = 1;
+            listView1.UseCompatibleStateImageBehavior = false;
+            // 
+            // radioButton1
+            // 
+            radioButton1.AutoSize = true;
+            radioButton1.Location = new Point(3, 272);
+            radioButton1.Name = "radioButton1";
+            radioButton1.Size = new Size(117, 24);
+            radioButton1.TabIndex = 2;
+            radioButton1.TabStop = true;
+            radioButton1.Text = "radioButton1";
+            radioButton1.UseVisualStyleBackColor = true;
             // 
             // User_Home
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(flowLayoutPanel1);
+            Controls.Add(panel1);
             Margin = new Padding(0);
             MinimumSize = new Size(150, 150);
             Name = "User_Home";
-            flowLayoutPanel1.ResumeLayout(false);
-            flowLayoutPanel1.PerformLayout();
+            Size = new Size(670, 851);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
@@ -87,8 +93,9 @@
 
         #endregion
 
-        private FlowLayoutPanel flowLayoutPanel1;
         private Panel panel1;
-        private Label label1;
+        private RadioButton radioButton1;
+        private ListView listView1;
+        private CheckBox checkBox1;
     }
 }
