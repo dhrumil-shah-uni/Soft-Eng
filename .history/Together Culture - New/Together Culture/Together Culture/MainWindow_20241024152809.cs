@@ -18,7 +18,7 @@ namespace Together_Culture
             int nHeightEllipse // height of ellipse
         );
 
-        private Point mouseLocation;
+        public Point mouseLocation;
 
         public MainWindow()
         {

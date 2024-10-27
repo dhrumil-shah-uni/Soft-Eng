@@ -18,7 +18,7 @@ namespace Together_Culture
             int nHeightEllipse // height of ellipse
         );
 
-        private Point mouseLocation;
+        
 
         public MainWindow()
         {
@@ -31,6 +31,7 @@ namespace Together_Culture
 
         private void mouse_Down(object sender, MouseEventArgs e)
         {
+            private Point mouseLocation;
             mouseLocation = new Point(-e.X, -e.Y);
 
         }
