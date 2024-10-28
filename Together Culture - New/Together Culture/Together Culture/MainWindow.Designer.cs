@@ -32,6 +32,7 @@
             MainGrid = new TableLayoutPanel();
             Title = new Label();
             FoundationPanel = new Panel();
+            user_Home1 = new User_Home();
             MainGrid.SuspendLayout();
             FoundationPanel.SuspendLayout();
             SuspendLayout();
@@ -41,6 +42,7 @@
             MainGrid.BackColor = Color.Transparent;
             resources.ApplyResources(MainGrid, "MainGrid");
             MainGrid.Controls.Add(Title, 0, 0);
+            MainGrid.Controls.Add(user_Home1, 1, 1);
             MainGrid.Name = "MainGrid";
             // 
             // Title
@@ -58,6 +60,11 @@
             resources.ApplyResources(FoundationPanel, "FoundationPanel");
             FoundationPanel.Controls.Add(MainGrid);
             FoundationPanel.Name = "FoundationPanel";
+            // 
+            // user_Home1
+            // 
+            resources.ApplyResources(user_Home1, "user_Home1");
+            user_Home1.Name = "user_Home1";
             // 
             // MainWindow
             // 
@@ -86,5 +93,6 @@
         private TableLayoutPanel MainGrid;
         private Label Title;
         private Panel FoundationPanel;
+        private User_Home user_Home1;
     }
 }
