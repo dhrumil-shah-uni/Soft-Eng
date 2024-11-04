@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             MainGrid = new TableLayoutPanel();
             Title = new Label();
-            FoundationPanel = new Panel();
             user_Home1 = new User_Home();
+            FoundationPanel = new Panel();
             MainGrid.SuspendLayout();
             FoundationPanel.SuspendLayout();
             SuspendLayout();
@@ -55,16 +55,16 @@
             Title.Name = "Title";
             Title.Click += Title_Click;
             // 
+            // user_Home1
+            // 
+            resources.ApplyResources(user_Home1, "user_Home1");
+            user_Home1.Name = "user_Home1";
+            // 
             // FoundationPanel
             // 
             resources.ApplyResources(FoundationPanel, "FoundationPanel");
             FoundationPanel.Controls.Add(MainGrid);
             FoundationPanel.Name = "FoundationPanel";
-            // 
-            // user_Home1
-            // 
-            resources.ApplyResources(user_Home1, "user_Home1");
-            user_Home1.Name = "user_Home1";
             // 
             // MainWindow
             // 

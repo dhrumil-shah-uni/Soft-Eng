@@ -29,42 +29,20 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            checkBox1 = new CheckBox();
-            listView1 = new ListView();
             radioButton1 = new RadioButton();
+            checkBox1 = new CheckBox();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.Controls.Add(radioButton1);
-            panel1.Controls.Add(listView1);
             panel1.Controls.Add(checkBox1);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(670, 851);
             panel1.TabIndex = 0;
-            // 
-            // checkBox1
-            // 
-            checkBox1.AutoSize = true;
-            checkBox1.Dock = DockStyle.Top;
-            checkBox1.Location = new Point(0, 0);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(670, 24);
-            checkBox1.TabIndex = 0;
-            checkBox1.Text = "checkBox1";
-            checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // listView1
-            // 
-            listView1.Dock = DockStyle.Bottom;
-            listView1.Location = new Point(0, 730);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(670, 121);
-            listView1.TabIndex = 1;
-            listView1.UseCompatibleStateImageBehavior = false;
             // 
             // radioButton1
             // 
@@ -76,6 +54,17 @@
             radioButton1.TabStop = true;
             radioButton1.Text = "radioButton1";
             radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Dock = DockStyle.Top;
+            checkBox1.Location = new Point(0, 0);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(670, 24);
+            checkBox1.TabIndex = 0;
+            checkBox1.Text = "checkBox1";
+            checkBox1.UseVisualStyleBackColor = true;
             // 
             // User_Home
             // 
@@ -95,7 +84,6 @@
 
         private Panel panel1;
         private RadioButton radioButton1;
-        private ListView listView1;
         private CheckBox checkBox1;
     }
 }
