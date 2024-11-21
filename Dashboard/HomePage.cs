@@ -48,11 +48,6 @@ namespace Dashboard
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void label9_Click(object sender, EventArgs e)
         {
 
@@ -78,7 +73,7 @@ namespace Dashboard
 
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        private void listView1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
 
         }
