@@ -121,8 +121,11 @@
   <data name="Untitled (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Untitled (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Untitled (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Untitled (4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GZ_Blog_TeamBuilding (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GZ_Blog_TeamBuilding (1)1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GZ_Blog_TeamBuilding (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GZ_Blog_TeamBuilding (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="community-service-ideas 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\community-service-ideas 1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,8 +133,8 @@
   <data name="Untitled (7)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Untitled (7).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="4230535_calendar_event_star_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4230535_calendar_event_star_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="wdfergt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wdfergt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="71wD4yYUqyL-678x1024" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\71wD4yYUqyL-678x1024.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,16 +142,16 @@
   <data name="Untitled (6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Untitled (6).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GZ_Blog_TeamBuilding (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GZ_Blog_TeamBuilding (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="4230535_calendar_event_star_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4230535_calendar_event_star_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="89a1e36284c452e037e8de26c4b296b6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\89a1e36284c452e037e8de26c4b296b6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GZ_Blog_TeamBuilding (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GZ_Blog_TeamBuilding (1)1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Untitled (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Untitled (4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="wdfergt" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wdfergt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="RED BG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RED BG.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

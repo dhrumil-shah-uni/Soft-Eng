@@ -123,6 +123,16 @@ namespace Dashboard.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap RED_BG {
+            get {
+                object obj = ResourceManager.GetObject("RED BG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Untitled__3_ {
             get {
                 object obj = ResourceManager.GetObject("Untitled (3)", resourceCulture);
