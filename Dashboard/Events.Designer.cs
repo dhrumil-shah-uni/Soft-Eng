@@ -58,7 +58,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label15 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -77,7 +78,6 @@
             this.flowLayoutPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("flowLayoutPanel1.BackgroundImage")));
             this.flowLayoutPanel1.Controls.Add(this.panel1);
             this.flowLayoutPanel1.Controls.Add(this.panel2);
-            this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel2);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -91,7 +91,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(735, 265);
+            this.panel1.Size = new System.Drawing.Size(781, 298);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -109,6 +109,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.label15);
+            this.panel2.Controls.Add(this.flowLayoutPanel4);
             this.panel2.Controls.Add(this.panel12);
             this.panel2.Controls.Add(this.panel10);
             this.panel2.Controls.Add(this.panel8);
@@ -116,9 +118,9 @@
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(3, 274);
+            this.panel2.Location = new System.Drawing.Point(3, 307);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(504, 711);
+            this.panel2.Size = new System.Drawing.Size(781, 711);
             this.panel2.TabIndex = 1;
             // 
             // panel12
@@ -372,14 +374,25 @@
             this.label3.TabIndex = 10;
             this.label3.Text = "Upcoming Events";
             // 
-            // flowLayoutPanel2
+            // flowLayoutPanel4
             // 
-            this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(513, 274);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(225, 270);
-            this.flowLayoutPanel2.TabIndex = 2;
-            this.flowLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel2_Paint);
+            this.flowLayoutPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.flowLayoutPanel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("flowLayoutPanel4.BackgroundImage")));
+            this.flowLayoutPanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(510, 53);
+            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(268, 206);
+            this.flowLayoutPanel4.TabIndex = 15;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft YaHei", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.label15.Location = new System.Drawing.Point(524, 13);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(237, 26);
+            this.label15.TabIndex = 16;
+            this.label15.Text = "Upcoming Events Diary";
             // 
             // Events
             // 
@@ -415,7 +428,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.Panel panel3;
@@ -441,5 +453,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
     }
 }
