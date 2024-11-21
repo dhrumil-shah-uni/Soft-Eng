@@ -33,6 +33,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -58,8 +60,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label15 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -120,8 +120,28 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Location = new System.Drawing.Point(3, 307);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(781, 711);
+            this.panel2.Size = new System.Drawing.Size(781, 927);
             this.panel2.TabIndex = 1;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft YaHei", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.label15.Location = new System.Drawing.Point(3, 8);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(237, 26);
+            this.label15.TabIndex = 16;
+            this.label15.Text = "Upcoming Events Diary";
+            // 
+            // flowLayoutPanel4
+            // 
+            this.flowLayoutPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.flowLayoutPanel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("flowLayoutPanel4.BackgroundImage")));
+            this.flowLayoutPanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(0, 37);
+            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(775, 410);
+            this.flowLayoutPanel4.TabIndex = 15;
             // 
             // panel12
             // 
@@ -129,7 +149,7 @@
             this.panel12.Controls.Add(this.label13);
             this.panel12.Controls.Add(this.label14);
             this.panel12.Controls.Add(this.panel13);
-            this.panel12.Location = new System.Drawing.Point(255, 498);
+            this.panel12.Location = new System.Drawing.Point(536, 694);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(239, 200);
             this.panel12.TabIndex = 14;
@@ -142,7 +162,8 @@
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(197, 19);
             this.label13.TabIndex = 14;
-            this.label13.Text = "15 December, 8pm - 11pm";
+            this.label13.Text = "23 December, 8pm - 11pm";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // label14
             // 
@@ -169,7 +190,7 @@
             this.panel10.Controls.Add(this.label11);
             this.panel10.Controls.Add(this.label12);
             this.panel10.Controls.Add(this.panel11);
-            this.panel10.Location = new System.Drawing.Point(3, 497);
+            this.panel10.Location = new System.Drawing.Point(274, 693);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(239, 200);
             this.panel10.TabIndex = 13;
@@ -209,7 +230,7 @@
             this.panel8.Controls.Add(this.label10);
             this.panel8.Controls.Add(this.label9);
             this.panel8.Controls.Add(this.panel9);
-            this.panel8.Location = new System.Drawing.Point(255, 275);
+            this.panel8.Location = new System.Drawing.Point(8, 693);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(239, 200);
             this.panel8.TabIndex = 12;
@@ -249,7 +270,7 @@
             this.panel6.Controls.Add(this.label8);
             this.panel6.Controls.Add(this.label7);
             this.panel6.Controls.Add(this.panel7);
-            this.panel6.Location = new System.Drawing.Point(3, 274);
+            this.panel6.Location = new System.Drawing.Point(536, 487);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(239, 200);
             this.panel6.TabIndex = 11;
@@ -289,7 +310,7 @@
             this.panel5.Controls.Add(this.label6);
             this.panel5.Controls.Add(this.label5);
             this.panel5.Controls.Add(this.flowLayoutPanel3);
-            this.panel5.Location = new System.Drawing.Point(254, 50);
+            this.panel5.Location = new System.Drawing.Point(274, 487);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(235, 200);
             this.panel5.TabIndex = 1;
@@ -330,7 +351,7 @@
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.panel3);
-            this.panel4.Location = new System.Drawing.Point(3, 52);
+            this.panel4.Location = new System.Drawing.Point(8, 487);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(239, 200);
             this.panel4.TabIndex = 0;
@@ -368,31 +389,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(9, 10);
+            this.label3.Location = new System.Drawing.Point(3, 450);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(188, 27);
             this.label3.TabIndex = 10;
             this.label3.Text = "Upcoming Events";
-            // 
-            // flowLayoutPanel4
-            // 
-            this.flowLayoutPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.flowLayoutPanel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("flowLayoutPanel4.BackgroundImage")));
-            this.flowLayoutPanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(510, 53);
-            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(268, 206);
-            this.flowLayoutPanel4.TabIndex = 15;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft YaHei", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.label15.Location = new System.Drawing.Point(524, 13);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(237, 26);
-            this.label15.TabIndex = 16;
-            this.label15.Text = "Upcoming Events Diary";
             // 
             // Events
             // 
