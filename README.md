@@ -1,13 +1,2 @@
-# Software Engineering Project
-## Together Culture
-### Members: Dhrumil, Ali, Jose, Gagan
-
-## Objectives:
-Develop and code
-wireframess
-sjks
-
-sjskdhsfghasdjh
-sdoihgihsdgof
-'ahsdkhasd
-kjdfkjasdhf
+# Together Culture CRM Solution
+##This is an unmanaged dump workspace, please refer to [https://github.com/dhrumil-shah-uni/C-WinForms](https://github.com/dhrumil-shah-uni/C-WinForms) for the full project.
